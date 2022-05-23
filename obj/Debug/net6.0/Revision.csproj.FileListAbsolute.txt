@@ -1,0 +1,15 @@
+E:\git\Revision\bin\Debug\net6.0\Revision.exe
+E:\git\Revision\bin\Debug\net6.0\Revision.deps.json
+E:\git\Revision\bin\Debug\net6.0\Revision.runtimeconfig.json
+E:\git\Revision\bin\Debug\net6.0\Revision.dll
+E:\git\Revision\bin\Debug\net6.0\Revision.pdb
+E:\git\Revision\obj\Debug\net6.0\Revision.csproj.AssemblyReference.cache
+E:\git\Revision\obj\Debug\net6.0\Revision.GeneratedMSBuildEditorConfig.editorconfig
+E:\git\Revision\obj\Debug\net6.0\Revision.AssemblyInfoInputs.cache
+E:\git\Revision\obj\Debug\net6.0\Revision.AssemblyInfo.cs
+E:\git\Revision\obj\Debug\net6.0\Revision.csproj.CoreCompileInputs.cache
+E:\git\Revision\obj\Debug\net6.0\Revision.dll
+E:\git\Revision\obj\Debug\net6.0\refint\Revision.dll
+E:\git\Revision\obj\Debug\net6.0\Revision.pdb
+E:\git\Revision\obj\Debug\net6.0\Revision.genruntimeconfig.cache
+E:\git\Revision\obj\Debug\net6.0\ref\Revision.dll

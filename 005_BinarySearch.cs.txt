@@ -1,0 +1,52 @@
+// Hello World! program
+namespace Problem
+{
+    class Solution
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[]{ 1, 2, 3, 4, 5 };
+            int key = 4;
+            System.Console.WriteLine("Element found at index {0}", Search(arr, key, 0, arr.Length - 1));
+        }
+
+        // //returns the index of search element
+        // static int Search(int[] arr, int key)
+        // {
+        //     int low = 0, high = arr.Length - 1;
+
+        //     while(low <= high)
+        //     {
+        //         int mid = (low + high) / 2;
+
+        //         if(arr[mid] == key)
+        //             return ++mid;
+        //         else if(key < arr[mid])
+        //             high = mid - 1;
+        //         else
+        //             low = mid + 1;
+        //     }
+
+        //     return -1;
+        // }
+
+        //returns the index of search element
+        static int Search(int[] arr, int key, int l, int r)
+        {
+            if(r >= l)
+            {
+                int mid = (l + r) / 2;
+
+                if(arr[mid] == key)
+                    return mid;
+                else if(key < arr[mid])
+                    return Search(arr, key, l, mid - 1);
+                else
+                    return Search(arr, key, mid + 1, r);
+            }
+
+            return -1;
+        }
+    }
+}
+

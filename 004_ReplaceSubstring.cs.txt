@@ -1,0 +1,33 @@
+// Hello World! program
+namespace Problem
+{
+    class Solution
+    {
+        static void Main(string[] args)
+        {
+            string result = "HelloABWorld!";
+            Translate(result);
+            Console.WriteLine(result);
+        }
+
+        static void Translate(string s)
+        {
+            var arr = s.ToCharArray();
+
+            for(int i = 1; i < arr.Length; i++)
+            {
+                if(arr[i-1] == 'A' && arr[i] == 'B')
+                {
+                    arr[i-1] = 'C';
+
+                    int j;
+                    for(j = i; j < arr.Length - 1; j++)
+                    {
+                        arr[j] = arr[j + 1];
+                    }
+                    arr[j] = ' ';
+                }
+            }
+        }
+    }
+}

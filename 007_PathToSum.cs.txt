@@ -1,0 +1,67 @@
+class Solution
+{
+    static Node root;
+
+    public static void Main()
+    {
+        int sum = 23;
+
+        root = new Node(10);
+        root.left = new Node(8);
+        root.right = new Node(2);
+        root.left.left = new Node(3);
+        root.left.right = new Node(5);
+        root.right.left = new Node(2);
+
+        if (haspathSum(root, sum))
+        {
+            Console.WriteLine("Yes, There is a root to leaf "
+                            + "path with sum " + sum);
+        }
+        else
+        {
+            Console.WriteLine("No, There is no root to leaf "
+                            + "path with sum " + sum);
+        }
+    }
+
+    private static bool haspathSum(Node root, int sum)
+    {
+        bool ans = false;
+
+        int subsum = sum - root.data;
+
+        if(subsum == 0 && root.left == null && root.right == null) //total sum reached and at leaf node
+        {
+            return true;
+        }
+
+        //otherwise, check both sub tree
+        if(root.left != null)
+        {
+            ans = ans || haspathSum(root.left, subsum);
+        }
+
+        if(root.right != null)
+        {
+            ans = ans || haspathSum(root.right, subsum);
+        }
+
+        return ans;
+    }
+}
+
+public class Node
+{
+    public int data;
+
+    public Node left;
+    public Node right;
+
+    public Node(int data, Node left = null, Node right = null)
+    {
+        this.data = data;
+        this.left = left;
+        this.right = right;
+    }
+}
